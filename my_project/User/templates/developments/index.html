@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> NAC </title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="../../static/css/materialdesignicons.min.css">
+    <link rel="stylesheet" type="text/css" href="../../static/css/style.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@mdi/font@6.5.95/css/materialdesignicons.min.css">
+
+</head>
+
+<body>
+    <main class="dashboard">
+        <header class="header">
+            <div class="header-top">
+                <button onclick="goBack()" type="button" class="back-button mdi mdi-arrow-left">  </button>
+            </div>
+            <div class="header-bottom">
+                <h1 class="header-title"> WORK STATUS </h1>
+            </div>
+        </header>
+        <article class="article">
+            <div class="select-sort">
+                <select class="form-control">
+                    <option selected> All </option>
+                    <option> Work Started </option>
+                    <option> Work Progress </option>
+                    <option> Work Pending </option>
+                    <option> Work Completed </option>
+                    <option> Work Stopped </option>
+                    <option> Tendering </option>
+                    <option> Agreement Executed </option>
+                    <option> Supply Order Given </option>
+                </select>
+            </div>
+            <div class="meet-mp">
+                <a href="{% url 'developments_details'%}" class="meet-col">
+                    <div class="meet-head">
+                        <span class="status started"> Work Started </span>
+                        <span class="meet-time"> 12 January 2019 </span>
+                    </div>
+                    <h3 class="meet-title"> Flyover bridge construction </h3>
+                    <h5 class="meet-location"> Ernakulam - Valanchery Road </h5>
+                </a>
+                <a href="{% url 'developments_details'%}" class="meet-col">
+                    <div class="meet-head">
+                        <span class="status progress"> Work Progress </span>
+                        <span class="meet-time"> 08 February 2019 </span>
+                    </div>
+                    <h3 class="meet-title"> Rivers bridge state park </h3>
+                    <h5 class="meet-location"> Ernakulam - Valanchery Road </h5>
+                </a>
+                <a href="{% url 'developments_details'%}" class="meet-col">
+                    <div class="meet-head">
+                        <span class="status pending"> Work Pending </span>
+                        <span class="meet-time"> 15 February 2019 </span>
+                    </div>
+                    <h3 class="meet-title"> Stadium work </h3>
+                    <h5 class="meet-location"> Ernakulam - Valanchery Road </h5>
+                </a>
+                <a href="{% url 'developments_details'%}" class="meet-col">
+                    <div class="meet-head">
+                        <span class="status completed"> Work Completed </span>
+                        <span class="meet-time"> 26 February 2019 </span>
+                    </div>
+                    <h3 class="meet-title"> Road Patch Work </h3>
+                    <h5 class="meet-location"> Ernakulam - Valanchery Road </h5>
+                </a>
+                <a href="{% url 'developments_details'%}" class="meet-col">
+                    <div class="meet-head">
+                        <span class="status stopped"> Work Stopped </span>
+                        <span class="meet-time"> 02 March 2019 </span>
+                    </div>
+                    <h3 class="meet-title"> Flyover bridge construction </h3>
+                    <h5 class="meet-location"> Ernakulam - Valanchery Road </h5>
+                </a>
+                <a href="{% url 'developments_details'%}" class="meet-col">
+                    <div class="meet-head">
+                        <span class="status tendering"> Tendering </span>
+                        <span class="meet-time"> 08 February 2019 </span>
+                    </div>
+                    <h3 class="meet-title"> Rivers bridge state park </h3>
+                    <h5 class="meet-location"> Ernakulam - Valanchery Road </h5>
+                </a>
+                <a href="{% url 'developments_details'%}" class="meet-col">
+                    <div class="meet-head">
+                        <span class="status issued"> A.S Issued </span>
+                        <span class="meet-time"> 15 February 2019 </span>
+                    </div>
+                    <h3 class="meet-title"> Stadium work </h3>
+                    <h5 class="meet-location"> Ernakulam - Valanchery Road </h5>
+                </a>
+                <a href="{% url 'developments_details'%}" class="meet-col">
+                    <div class="meet-head">
+                        <span class="status executed"> Agreement Executed </span>
+                        <span class="meet-time"> 26 February 2019 </span>
+                    </div>
+                    <h3 class="meet-title"> Road Patch Work </h3>
+                    <h5 class="meet-location"> Ernakulam - Valanchery Road </h5>
+                </a>
+                <a href="{% url 'developments_details'%}" class="meet-col">
+                    <div class="meet-head">
+                        <span class="status supply"> Supply Order Given </span>
+                        <span class="meet-time"> 02 March 2019 </span>
+                    </div>
+                    <h3 class="meet-title"> Flyover bridge construction </h3>
+                    <h5 class="meet-location"> Ernakulam - Valanchery Road </h5>
+                </a>
+            </div>
+
+        </article>
+
+    </main>
+
+    <!-- JS -->
+    <script type="text/javascript" src="../../static/scripts/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="../../static/scripts/main.jquery.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> About Us </title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="../static/css/materialdesignicons.min.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/style.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@mdi/font@6.5.95/css/materialdesignicons.min.css">
+
+</head>
+
+<body>
+    <main class="dashboard">
+        <header class="header">
+            <div class="header-top">
+                <button onclick="goBack()" type="button" class="back-button mdi mdi-arrow-left">  </button>
+            </div>
+            <div class="header-bottom">
+                <h1 class="header-title">About Us</h1>
+            </div>
+        </header>
+        <article class="article">
+            <div class="version">
+                <div class="label">Version</div>
+                <div class="value">1.0.0 <a href="" class="update mdi mdi-update">Update</a></div>
+            </div>
+            <div class="details-content m0">
+                <h4 class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo distinctio vero eligendi? Blanditiis alias veritatis molestiae culpa mollitia modi nihil eius! Animi, aliquid tempore. Nulla ratione voluptatibus ea optio quaerat? Lorem
+                    ipsum dolor sit amet consectetur adipisicing elit.<br /> <br/> Itaque pariatur voluptas perspiciatis id voluptates enim cumque, laudantium placeat optio commodi accusantium? Voluptates reprehenderit, fuga ex iste enim rerum nesciunt
+                    molestiae.
+                </h4>
+            </div>
+            <div class="sub-menu">
+                <ul class="sub-menu-list sm-list">
+                    <li><a href="{% url 'policy'%}"><span class="menu-value">Privacy policy</span></a></li>
+                    <li><a href="{% url 'terms'%}"><span class="menu-value">Terms & Conditions</span></a></li>
+                    <li><a href="#" id="rateBtn"><span class="menu-value">Rate us</span></a></li>
+                </ul>
+            </div>
+
+            <div class="powered-sec">
+                <h4 class="title">Powered by</h4>
+                <span class="image"><img src="../static/images/about/kerala government logo.png" alt=""></span>
+            </div>
+
+        </article>
+
+        <div id="rateModal" class="rate-modal">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <p class="text">Love the app? Rate Us</p>
+                    <a href="" class="rate-button">Rate Now</a>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- JS -->
+    <script type="text/javascript" src="../static/scripts/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="../static/scripts/main.jquery.js"></script>
+    <script>
+        // Rate Modal
+        var modal = document.getElementById("rateModal"),
+            btn = document.getElementById("rateBtn"),
+            span = document.getElementsByClassName("rate-close")[0];
+        btn.onclick = function() {
+            modal.style.display = "block"
+        }, window.onclick = function(n) {
+            n.target == modal && (modal.style.display = "none")
+        };
+    </script>
+</body>
+
+</html>

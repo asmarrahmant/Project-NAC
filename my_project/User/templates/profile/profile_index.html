@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Personal Details </title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="../static/css/materialdesignicons.min.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/style.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@mdi/font@6.5.95/css/materialdesignicons.min.css">
+
+</head>
+
+<body>
+    <main class="dashboard">
+        <header class="header">
+            <div class="header-top">
+                <button onclick="goBack()" type="button" class="back-button mdi mdi-arrow-left">  </button>
+            </div>
+            <div class="header-bottom">
+                <h1 class="header-title"> Personal Details </h1>
+            </div>
+        </header>
+        <article class="article">
+            <div class="profile-info">
+                <i class="profile-image"><img src="../../static/images/profile/user-image.jpg" /></i>
+                <div class="profile-content">
+                    <h1 class="profile-name"> Twyllo </h1>
+                    <h5 class="profile-email"> twyllo@mail.com </h5>
+                </div>
+            </div>
+            <ul class="profile-info-list">
+                <li>
+                    <i class="mdi mdi-account-outline"></i>
+                    <div class="profile-info-col">
+                        <span class="profile-info-label"> Full Name </span>
+                        <span class="profile-info-value"> Twyllo </span>
+                    </div>
+                </li>
+                <li>
+                    <i class="mdi mdi-email-outline"></i>
+                    <div class="profile-info-col">
+                        <span class="profile-info-label"> Email </span>
+                        <span class="profile-info-value"> twyllo@mail.com </span>
+                    </div>
+                </li>
+                <li>
+                    <i class="mdi mdi-cellphone-android"></i>
+                    <div class="profile-info-col">
+                        <span class="profile-info-label"> Mobile </span>
+                        <span class="profile-info-value"> +91 0123 456 789 </span>
+                    </div>
+                </li>
+                <li>
+                    <i class="mdi mdi-map-marker-outline "></i>
+                    <div class="profile-info-col">
+                        <span class="profile-info-label"> Location </span>
+                        <span class="profile-info-value"> Willingdon Island, Kochi </span>
+                    </div>
+                </li>
+                <li>
+                    <i class="mdi mdi-school"></i>
+                    <div class="profile-info-col">
+                        <span class="profile-info-label"> Occupation </span>
+                        <span class="profile-info-value"> Mrketing Manager </span>
+                    </div>
+                </li>
+            </ul>
+            <a type="button" class="master-btn" href="{% url 'edit_profile'%}"> Edit Profile </a>
+            <ul class="profile-nav">
+                <li><a href="{% url 'profile_username'%}">Change your Username ? </a></li>
+                <li><a href="{% url 'profile_password'%}">Change your Password ?</a></li>
+            </ul>
+
+        </article>
+
+    </main>
+
+    <!-- JS -->
+    <script type="text/javascript" src="../static/scripts/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="../static/scripts/main.jquery.js"></script>
+
+</body>
+
+</html>

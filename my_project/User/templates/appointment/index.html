@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> NAC </title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="../../static/css/materialdesignicons.min.css">
+    <link rel="stylesheet" type="text/css" href="../../static/css/style.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@mdi/font@6.5.95/css/materialdesignicons.min.css">
+
+</head>
+
+<body>
+    <main class="dashboard">
+        <header class="header">
+            <div class="header-top">
+                <button onclick="goBack()" type="button" class="back-button mdi mdi-arrow-left">  </button>
+            </div>
+            <div class="header-bottom">
+                <h1 class="header-title"> Active Appointments </h1>
+            </div>
+        </header>
+        <article class="article">
+            <div class="meet-mp">
+                <div class="meet-col">
+                    <div class="meet-head">
+                        <span class="status confirmed"> Confirmed </span>
+                        <span class="meet-time"> 12.02.2019 ,  10:30 am </span>
+                    </div>
+                    <h3 class="meet-title"> Lorem ipsum dolor sit amet, consectetuer adipiscing </h3>
+                    <h5 class="meet-location"> Ernakulam Gust House </h5>
+                </div>
+                <div class="meet-col">
+                    <div class="meet-head">
+                        <span class="status pending"> Pending </span>
+                    </div>
+                    <h3 class="meet-title"> Lorem ipsum dolor sit amet, consectetuer adipiscing </h3>
+                </div>
+            </div>
+
+            <a href="{% url 'new_appointment'%}" class="add-button mdi mdi-plus"> </a>
+        </article>
+
+    </main>
+
+    <!-- JS -->
+    <script type="text/javascript" src="../../static/scripts/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="../../static/scripts/main.jquery.js"></script>
+
+</body>
+
+</html>

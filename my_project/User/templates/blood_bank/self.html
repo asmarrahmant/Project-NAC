@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Add Blood Self </title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="../../static/css/materialdesignicons.min.css">
+    <link rel="stylesheet" type="text/css" href="../../static/css/style.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@mdi/font@6.5.95/css/materialdesignicons.min.css">
+
+</head>
+
+<body>
+    <main class="dashboard">
+        <header class="header">
+            <div class="header-top">
+                <button onclick="goBack()" type="button" class="back-button mdi mdi-arrow-left">  </button>
+            </div>
+            <div class="header-bottom">
+                <h1 class="header-title"> Add Blood Self </h1>
+            </div>
+        </header>
+        <article class="article">
+            <div class="toast-box">
+                <div id="toast" class="toast mdi mdi-check-decagram"> </div>
+            </div>
+            <form class="form" method="post">
+                <div class="form-group form-group-select">
+                    <label class="form-label"> Blood Group  </label>
+                    <select class="form-control" required>
+                        <option selected disabled hidden value=""> Select Blood Group </option>
+                        <option> O+ </option>
+                        <option> O- </option>
+                        <option> A+ </option>
+                        <option> A- </option>
+                        <option> B+ </option>
+                        <option> B- </option>
+                        <option> AB+ </option>
+                        <option> AB- </option>
+                        <option> Bombay Blood </option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <a type="button" class="master-btn" href="#" onclick="showToast('Save Your Blood Group')">  Save & Submit </a>
+                </div>
+            </form>
+        </article>
+
+    </main>
+
+    <!-- JS -->
+    <script type="text/javascript" src="../../static/scripts/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="../../static/scripts/main.jquery.js"></script>
+
+</body>
+
+</html>

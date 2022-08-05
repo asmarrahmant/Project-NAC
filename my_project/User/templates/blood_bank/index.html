@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Blood Directory </title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="../../static/css/materialdesignicons.min.css">
+    <link rel="stylesheet" type="text/css" href="../../static/css/style.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@mdi/font@6.5.95/css/materialdesignicons.min.css">
+
+</head>
+
+<body>
+    <main class="dashboard">
+        <header class="header">
+            <div class="header-top">
+                <button onclick="goBack()" type="button" class="back-button mdi mdi-arrow-left">  </button>
+            </div>
+            <div class="header-bottom">
+                <h1 class="header-title"> Blood Directory </h1>
+            </div>
+        </header>
+        <article class="article">
+            <div class="blood-details">
+                <div class="blood-self">
+                    <div class="blood-group"><span>A+</span></div>
+                    <div class="blood-content">
+                        <h3 class="name"> Twyllo </h3>
+                        <h5 class="email"> twyllo@mail.com </h5>
+                        <h4 class="mobile"> +91 0123 456 789 </h4>
+                    </div>
+                </div>
+
+                <div class="sub-menu">
+                    <ul class="sub-menu-list">
+                        <li>
+                            <a href="{% url 'blood_bank_group'%}">
+                                <i class="icon"><img src="../../static/images/blood/blood-1.svg" alt=""></i>
+                                <span class="menu-value"> Blood Group List </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="{% url 'blood_bank_self'%}">
+                                <i class="icon"><img src="../../static/images/blood/blood-2.svg" alt=""></i>
+                                <span class="menu-value"> Add Self Blood Group </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="{% url 'blood_bank_add'%}">
+                                <i class="icon"><img src="../../static/images/blood/blood-2.svg" alt=""></i>
+                                <span class="menu-value"> Add New Member </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="{% url 'blood_bank_information'%}">
+                                <i class="icon"><img src="../../static/images/blood/blood-3.svg" alt=""></i>
+                                <span class="menu-value"> Blood Information </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </article>
+
+    </main>
+
+    <!-- JS -->
+    <script type="text/javascript" src="../../static/scripts/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="../../static/scripts/main.jquery.js"></script>
+
+</body>
+
+</html>

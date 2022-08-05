@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> NAC </title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="../../static/css/materialdesignicons.min.css">
+    <link rel="stylesheet" type="text/css" href="../../static/css/style.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@mdi/font@6.5.95/css/materialdesignicons.min.css">
+
+</head>
+
+<body>
+    <main class="dashboard">
+        <header class="header">
+            <div class="header-top">
+                <button onclick="goBack()" type="button" class="back-button mdi mdi-arrow-left">  </button>
+            </div>
+            <div class="header-bottom">
+                <h1 class="header-title"> New Complaint </h1>
+            </div>
+        </header>
+        <article class="article">
+            <div class="toast-box">
+                <div id="toast" class="toast mdi mdi-check-decagram"> </div>
+            </div>
+            <form class="form" method="post">
+                <div class="form-group">
+                    <label class="form-label"> Title  </label>
+                    <input type="text" name="title" class="form-control" placeholder="Title">
+                </div>
+                <div class="form-group form-group-location">
+                    <label class="form-label"> Location  </label>
+                    <input type="text" name="title" class="form-control" placeholder="Location">
+                </div>
+                <div class="form-group">
+                    <label class="form-label"> Discription  </label>
+                    <textarea name="" id="" cols="30" rows="10" class="form-control" placeholder="Text here"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <span class="form-file-col">
+                        <input type="file" name="upload" class="form-file" />
+                        <i class="mdi mdi-image-outline"></i> Upload Images
+                    </span>
+                </div>
+                <div class="form-group">
+                    <a type="button" class="master-btn" href="#" onclick="showToast('Send Your Complaint')">  Save </a>
+                </div>
+            </form>
+        </article>
+
+    </main>
+
+    <!-- JS -->
+    <script type="text/javascript" src="../../static/scripts/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="../../static/scripts/main.jquery.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> NAC </title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="../../static/css/materialdesignicons.min.css">
+    <link rel="stylesheet" type="text/css" href="../../static/css/style.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@mdi/font@6.5.95/css/materialdesignicons.min.css">
+
+</head>
+
+<body>
+    <main class="dashboard">
+        <header class="header">
+            <div class="header-top">
+                <button onclick="goBack()" type="button" class="back-button mdi mdi-arrow-left">  </button>
+            </div>
+            <div class="header-bottom">
+                <h1 class="header-title"> Details </h1>
+            </div>
+        </header>
+        <article class="article">
+            <div class="program-details">
+                <div class="program-details-title">
+                    <span class="status processing"> Processing </span>
+                    <h1 class="title"> Road Patch Work </h1>
+                    <h3 class="sub-test"> Ernakulam English Medium School, Kochi , Kerala 679534 </h3>
+                </div>
+                <div class="details-content">
+                    <h2 class="title"> Description </h2>
+                    <h4 class="content"> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. </h4>
+                </div>
+                <div class="details-images">
+                    <i class="images"><img id="" onclick="onClick(this)" src="../../static/images/complaints/images-11.jpg" alt=""></i>
+                    <i class="images"><img id="" onclick="onClick(this)" src="../../static/images/complaints/images-10.jpg" alt=""></i>
+                    <i class="images"><img id="" onclick="onClick(this)" src="../../static/images/complaints/images-9.jpg" alt=""></i>
+                    <i class="images"><img id="" onclick="onClick(this)" src="../../static/images/complaints/images-8.jpg" alt=""></i>
+                </div>
+            </div>
+
+        </article>
+
+        <div id="imageModal" class="modal" onclick="this.style.display='none'">
+            <span class="close mdi mdi-close"></span>
+            <div class="modal-body">
+                <img class="modal-content" id="img01">
+            </div>
+        </div>
+
+    </main>
+
+    <!-- JS -->
+    <script type="text/javascript" src="../../static/scripts/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="../../static/scripts/main.jquery.js"></script>
+
+</body>
+
+</html>

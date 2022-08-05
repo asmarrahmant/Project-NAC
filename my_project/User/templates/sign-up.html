@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@mdi/font@6.5.95/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="../static/css/sign-up.css">
+</head>
+<body>
+    <main class="login">
+        <div class="container">
+            <div class="loginbox">
+                <div class="top">
+                    <div class="column">
+                        <h1 class="title">Create New Account</h1>
+                        <form>
+                            <div class="form-grp">
+                                <i class="mdi mdi-account-outline"></i>
+                                <input type="text" placeholder="Full Name">
+                            </div>
+                            <div class="form-grp">
+                                <i class="mdi mdi-email-outline"></i>
+                                <input type="email" placeholder="Email Address">
+                            </div>
+                            <div class="form-grp">
+                                <i class="mdi mdi-account-circle-outline"></i>
+                                <input type="text" placeholder="User Name">
+                            </div>
+                            <div class="form-grp">
+                                <i class="mdi mdi-account-tie"></i>
+                                <input type="text" placeholder="Occupation">
+                            </div>
+                            <div class="form-grp">
+                                <i class="mdi mdi-cellphone"></i>
+                                <input type="number" placeholder="Mobile Number">
+                            </div>
+                            <div class="form-grp">
+                                <i class="mdi mdi-map-marker-outline"></i>
+                                <input type="text" placeholder="Location">
+                            </div>
+                            <div class="form-grp">
+                                <i class="mdi mdi-lock-outline"></i>
+                                <input type="password" placeholder="Password">
+                            </div>
+                            <label class="terms-and-condition">
+                                <input type="checkbox" name="" id=""> Creating an account means you're okay with our  <a href="{% url 'terms'%}" class="link1">Terms And Conditions</a>
+                            </label>
+                            <div class="btn-grp">
+                                <a href="{% url 'login' %}" class="login-btn" type="button">Create Account</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <div class="column">
+                        <p class="text1">Already have an account ?</p>
+                        <a href="{% url 'login'%}" class="signbtn">Login</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Blood Group List </title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="../../static/css/materialdesignicons.min.css">
+    <link rel="stylesheet" type="text/css" href="../../static/css/style.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@mdi/font@6.5.95/css/materialdesignicons.min.css">
+
+</head>
+
+<body>
+    <main class="dashboard">
+        <header class="header">
+            <div class="header-top">
+                <button onclick="goBack()" type="button" class="back-button mdi mdi-arrow-left">  </button>
+            </div>
+            <div class="header-bottom">
+                <h1 class="header-title">Blood Group List</h1>
+            </div>
+        </header>
+        <article class="article">
+            <div class="blood-group">
+                <ul class="group-list">
+                    <li>
+                        <a href="{% url 'blood_bank_list'%}">
+                            <span class="group-name">O+</span>
+                            <span class="list-count">374</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{% url 'blood_bank_list'%}">
+                            <span class="group-name">O-</span>
+                            <span class="list-count">66</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{% url 'blood_bank_list'%}">
+                            <span class="group-name">A+</span>
+                            <span class="list-count">358</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{% url 'blood_bank_list'%}">
+                            <span class="group-name">A-</span>
+                            <span class="list-count">63</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{% url 'blood_bank_list'%}">
+                            <span class="group-name">B+</span>
+                            <span class="list-count">85</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{% url 'blood_bank_list'%}">
+                            <span class="group-name">B-</span>
+                            <span class="list-count">15</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{% url 'blood_bank_list'%}">
+                            <span class="group-name">AB+</span>
+                            <span class="list-count">34</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{% url 'blood_bank_list'%}">
+                            <span class="group-name">AB-</span>
+                            <span class="list-count">6</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+        </article>
+
+    </main>
+
+    <!-- JS -->
+    <script type="text/javascript" src="../../static/scripts/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="../../static/scripts/main.jquery.js"></script>
+
+</body>
+
+</html>

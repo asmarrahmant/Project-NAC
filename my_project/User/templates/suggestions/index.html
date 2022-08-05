@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Suggestions </title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="../../static/css/materialdesignicons.min.css">
+    <link rel="stylesheet" type="text/css" href="../../static/css/style.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@mdi/font@6.5.95/css/materialdesignicons.min.css">
+
+</head>
+
+<body>
+    <main class="dashboard">
+        <header class="header">
+            <div class="header-top">
+                <button onclick="goBack()" type="button" class="back-button mdi mdi-arrow-left">  </button>
+            </div>
+            <div class="header-bottom">
+                <h1 class="header-title">Suggestions</h1>
+            </div>
+        </header>
+        <article class="article">
+            <div class="idea">
+                <a class="idea-col" href="{% url 'suggestions_details'%}">
+                    <h3 class="title">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h3>
+                    <h5 class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi perferendis et esse reprehenderit neque voluptatibus id, ipsam vitae cumque ab architecto aliquam voluptatem omnis </h5>
+                </a>
+                <a class="idea-col" href="{% url 'suggestions_details'%}">
+                    <h3 class="title">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h3>
+                    <h5 class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi perferendis et esse reprehenderit neque voluptatibus id, ipsam vitae cumque ab architecto aliquam voluptatem omnis </h5>
+                </a>
+                <a class="idea-col" href="{% url 'suggestions_details'%}">
+                    <h3 class="title">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h3>
+                    <h5 class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi perferendis et esse reprehenderit neque voluptatibus id, ipsam vitae cumque ab architecto aliquam voluptatem omnis </h5>
+                </a>
+                <a class="idea-col" href="{% url 'suggestions_details'%}">
+                    <h3 class="title">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h3>
+                    <h5 class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi perferendis et esse reprehenderit neque voluptatibus id, ipsam vitae cumque ab architecto aliquam voluptatem omnis </h5>
+                </a>
+            </div>
+
+            <a href="{% url 'suggestions_new'%}" class="add-button mdi mdi-plus"> </a>
+        </article>
+
+    </main>
+
+    <!-- JS -->
+    <script type="text/javascript" src="../../static/scripts/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="../../static/scripts/main.jquery.js"></script>
+
+</body>
+
+</html>
