@@ -1,8 +1,8 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 
-def welcome(request):
-    return render(request,'welcome.html')
+def index(request):
+    return render(request,'index.html')
 
 def home(request):
     return render(request,'../templates/home/home.html')    
