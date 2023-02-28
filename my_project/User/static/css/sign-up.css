@@ -124,6 +124,7 @@ input[type=number] {
     color: lightslategrey;
     font-weight: 700;
     line-height: 1.8;
+    text-decoration: dotted;
 }
 .link1:hover{
     text-decoration: underline;

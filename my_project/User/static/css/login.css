@@ -120,6 +120,7 @@ input[type=number] {
     height: 40px;
     width: 100%;
     line-height: 39px;
+    text-decoration: none;
 }
 .login-btn:hover{
     box-shadow: 0 0 0 1px #29a6c6, 0 0 10px 5px rgba(41, 166, 198, 0.31);
@@ -129,6 +130,8 @@ input[type=number] {
 .link1{
     font-size: 12px;
     color: lightslategrey;
+    text-decoration: none;
+    
 }
 .link1:hover{
     text-decoration: underline;
@@ -190,6 +193,11 @@ input[type=number] {
     color: white;
     margin-bottom: 15px;
 }
+.forgot-modal .btn:hover{
+    box-shadow: 0 0 0 1px #4caf50, 0 0 10px 5px rgba(41, 166, 198, 0.31);
+    color: white;
+    text-decoration: none;
+}
 .forgot-modal .modal-input .mdi{
     position: absolute;
     left: 0;
@@ -211,3 +219,41 @@ input[type=number] {
     color: lightslategrey;
     font-size: 13px;
 }
+/*- Toast ------------------------*/
+.toast-box {
+    position: fixed;
+    top: 100;
+    left: 100;
+    /* text-align: center; */
+    pointer-events: none;
+    width: 10%;
+    /* z-index: 202; */
+    margin-left: 170px;
+    margin-top: 10px;
+  }
+  .toast {
+    /* display: inline-block; */
+    background-color: #ffffff;
+    color: #20274c;
+    border-radius: 8px;
+    visibility: hidden;
+    opacity: 0;
+    /* height: 35px; */
+    line-height: 35px;
+    padding: 0 10px;
+    font-size: 0.9rem;
+    width: auto;
+    white-space: nowrap;
+    /* position: relative; */
+  }
+  .toast::before {
+    vertical-align: middle;
+    color: #27c665;
+    /* margin-right: 5px; */
+    font-size: 1.2rem;
+    float: left;
+  }
+  .toast.show {
+    visibility: visible;
+    animation: fadeInOut 10s;
+  }

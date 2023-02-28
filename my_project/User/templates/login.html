@@ -22,14 +22,14 @@
                 <div class="top">
                     <div class="column">
                         <h1 class="title">Login</h1>
-                        <form>
+                        <form action="/user/login" method="POST">
                             <div class="form-grp">
                                 <i class="mdi mdi-account-circle-outline"></i>
-                                <input type="text" placeholder="User Name">
+                                <input type="text" placeholder="User Name" id="username">
                             </div>
                             <div class="form-grp">
                                 <i class="mdi mdi-lock-outline"></i>
-                                <input type="password" placeholder="Password">
+                                <input type="password" placeholder="Password" id="userpassword">
                             </div>
                             <div class="btn-grp">
                                 <a href="{% url 'home'%}" class="login-btn" type="button">Login</a>
@@ -53,6 +53,9 @@
     <div class="modal fade forgot-modal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
           <div class="modal-content">
+            <div class="toast-box">
+                <div id="toast" class="toast mdi mdi-check-decagram"> </div>
+            </div>
             <div class="modal-body">
                 <i class="mdi mdi-alert-circle-outline"></i>
                 <h4 class="title">Forgot Password</h4>
@@ -61,11 +64,17 @@
                     <i class="mdi mdi-cellphone"></i>
                     <input type="number" placeholder="Enter your mobile number">
                 </div>
-                <button type="button" class="btn">Submit</button>
+                <button type="button" class="btn modal-btn" onclick="location.href='{% url 'otp'%}'">Submit</button>
                 <a href="{% url 'login'%}" class="back"> <i class="mdi mdi-chevron-left"></i> Back to Login</a>
             </div>
           </div>
         </div>
     </div>
+
+    <script type="text/javascript" src="../static/scripts/validation.js"></script>
+    <script type="text/javascript" src="../static/scripts/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="../static/scripts/main.jquery.js"></script>
+
+
 </body>
 </html>

@@ -10,6 +10,12 @@ def home(request):
 def login(request):
     return render(request,'login.html')
 
+def otp(request):
+    return render(request,'otp.html')
+
+def resetpassword(request):
+    return render(request,'resetpassword.html')
+
 def sign(request):
     return render(request,'sign-up.html')
 
