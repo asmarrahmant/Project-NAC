@@ -1,38 +1,38 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 
-def welcome(request):
-    return render(request,'welcome.html')
+def index(request):
+    return render(request,'index.html')
 
 def home(request):
-    return render(request,'home.html')    
+    return render(request,'../templates/home/home.html')    
 
 def login(request):
-    return render(request,'login.html')
+    return render(request,'../templates/login/login.html')
 
 def otp(request):
-    return render(request,'otp.html')
+    return render(request,'../templates/otp/otp.html')
 
 def resetpassword(request):
-    return render(request,'resetpassword.html')
+    return render(request,'../templates/resetpassword/resetpassword.html')
 
 def sign(request):
-    return render(request,'sign-up.html')
+    return render(request,'../templates/signup/sign-up.html')
 
 def feedback(request):
-    return render(request,'feedback.html')
+    return render(request,'../templates/feedback/feedback.html')
 
 def share(request):
-    return render(request,'share.html')
+    return render(request,'../templates/share/share.html')
 
 def about_us(request):
-    return render(request,'about.html')
+    return render(request,'../templates/about/about.html')
 
 def terms(request):
-    return render(request,'terms.html')
+    return render(request,'../templates/terms/terms.html')
 
 def policy(request):
-    return render(request,'policy.html')
+    return render(request,'../templates/policy/policy.html')
 
 
 def profile_index(request):
